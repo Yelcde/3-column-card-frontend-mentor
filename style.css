@@ -1,0 +1,204 @@
+                /* IMPORTAÇÕES */
+
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap');
+
+:root{
+
+    /* CORES */
+
+    --cor1: hsl(31, 77%, 52%);
+    --cor2: hsl(184, 100%, 22%);
+    --cor3: hsl(179, 100%, 13%);
+    --cor4: hsla(0, 0%, 100%, 0.75);
+    --cor5: hsl(0, 0%, 95%);
+
+    /* FONTES */
+
+    --font1: 'Lexend Deca', sans-serif;
+    --font2: 'Big Shoulders Display', cursive;
+}
+
+                /* CONFIGURAÇÕES GERAIS */
+        
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: var(--cor5);
+    font-size: 15px;
+    font-family: var(--font1);
+    overflow-y: hidden;
+}
+
+.container{
+    margin: auto;
+    max-width: 1000px;
+    position: relative;
+}
+
+.container > aside > div{
+    position: relative;
+    /* top: 20vh; */
+    padding: 30px;
+    max-width: 200px;
+    height: 400px;
+}
+
+.container > aside > div > .image{
+    padding: 20px;
+}
+
+.container > aside > div > h1, p{
+    padding-left: 20px;
+    font-size: 11px;
+    letter-spacing: 1px;
+    line-height: 20px;
+}
+
+.container > aside > div > h1{
+    padding-top: 10px;
+}
+
+.container > aside > div > p{
+    padding-top: 30px;
+    
+}
+
+aside{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+            /* BOTÕES */
+
+.container > aside > div > .button > button{
+    background-color: wheat;
+    border: none;
+    padding: 10px;
+    border-radius: 20px;
+    width: 120px;
+    font-size: 11px;
+    font-family: var(--font1);
+    position: relative;
+    bottom: -90px;
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+            /* SEDANS */
+
+.container > aside > .sedans{
+    background-color: var(--cor1);
+    color: var(--cor4);
+    border-radius: 7px 0 0 7px;
+}
+
+.container > aside > .sedans > h1{
+    font-family: var(--font2);
+    font-weight: bold;
+    color: var(--cor5);
+    font-size: 2em;
+}
+
+.container > aside > .sedans > .button > button{
+    color: var(--cor1);
+}
+
+            /* SUVS */
+
+.container > aside > .suvs{
+    background-color: var(--cor2);
+    color: var(--cor4);
+}
+
+.container > aside > .suvs > h1{
+    font-family: var(--font2);
+    font-weight: bold;
+    color: var(--cor5);
+    font-size: 2em;
+}
+
+.container > aside > .suvs > .button > button{
+    color: var(--cor2);
+}
+
+            /* LUXURY */
+
+.container > aside > .luxury{
+    background-color: var(--cor3);
+    color: var(--cor4);
+    border-radius: 0 7px 7px 0;
+}
+
+.container > aside > .luxury > h1{
+    font-family: var(--font2);
+    font-weight: bold;
+    color: var(--cor5);
+    font-size: 2em;
+}
+
+.container > aside > .sevs > .button > button{
+    color: var(--cor2);
+}
+
+.container > aside > .luxury > .button > button{
+    color: var(--cor3);
+}
+
+            /* FOOTER */
+
+footer{
+    font-size: 11px;
+    text-align: center;
+    font-family: var(--font1);
+    position: absolute;
+    left: 10%;
+    bottom: 0;
+    padding: 10px;
+}
+
+footer a{
+    color: hsl(228, 45%, 44%);
+    text-decoration: none;
+}
+
+@media (max-width: 675px){
+    body{
+        overflow: auto;
+    }
+
+    .container > aside{
+        flex-direction: column;
+        height: 200vh;
+    }
+
+    .container > aside > div{
+        padding: 30px;
+        height: 300px;
+    }
+
+    .container > aside > div > .button > button{
+        position: relative;
+        bottom: -20px;
+    }
+
+    .container > aside > .sedans{
+        border-radius: 7px 7px 0 0;
+    }
+
+    .container > aside > .luxury{
+        border-radius: 0 0 7px 7px;
+    }
+
+    footer{
+        position: absolute;
+        left: 10%;
+        bottom: -572px;
+    }
+}
